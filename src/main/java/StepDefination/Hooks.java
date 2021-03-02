@@ -1,11 +1,11 @@
 package StepDefination;
 
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.After;
 
 public class Hooks {
     @After
     public void closeBrowser() {
-        System.out.println("inside close browser");
-        Selenide.closeWindow();
-    }}
+        WebDriverRunner.closeWebDriver();
+    }
+}

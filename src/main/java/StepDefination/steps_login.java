@@ -11,6 +11,7 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import io.cucumber.java.en.When;
 
+import java.util.List;
 import java.util.Map;
 
 public class steps_login {
@@ -37,6 +38,11 @@ public class steps_login {
 
     @And("^The user clicks on (.+) tab$")
     public void user_clicks_on_MembershipPage(String tabName){
+        $(Selectors.byText(tabName)).click();
+    }
+
+    @And("^The user clicks on below (.+) in Dashboard Page$")
+    public void user_clicks_on_following_tabs(String tabName){
         $(Selectors.byText(tabName)).click();
     }
 
