@@ -9,4 +9,6 @@ public class Hooks {
     public void closeBrowser() {
         WebDriverRunner.closeWebDriver();
     }
+
+
 }
