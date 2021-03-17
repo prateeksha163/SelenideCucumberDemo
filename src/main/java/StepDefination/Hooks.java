@@ -2,10 +2,24 @@ package StepDefination;
 
 import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class Hooks {
 
-    @After
+
+
+
+
+
+    @Before("@admin")
+    public void setup(){
+
+
+
+    }
+
+
+    @After("@admin")
     public void closeBrowser() {
         WebDriverRunner.closeWebDriver();
     }
