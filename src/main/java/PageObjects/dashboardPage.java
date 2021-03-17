@@ -20,6 +20,9 @@ public class dashboardPage extends BasePage{
 
     private final ElementsCollection enrollmentValues=$$(By.xpath("//a[@class='select-box-list__item__text']"));
 
+     private final ElementsCollection quickLinksElements = $$(By.xpath("//*[@class='side-nav__actions']/li"));
+
+
     public List<String> getHierarchyHeaderValues() {
         return blockOfBusiness.texts();
     }

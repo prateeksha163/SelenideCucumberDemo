@@ -1,16 +1,11 @@
-@login @Test
-Feature: Login and navigating to dashboard page
+Feature: Login EBMS
+
+  This feature file contains steps to Login and navigate to EBMS tabs
 
   @P1
-  Scenario: User navigates to EBMS Portal
-    Given The user is on EBMS Dashboard Page
+  Scenario: Login to EBMS Portal and navigate to membership Page
+    Given The user launches the URL https://mibenefits-qua.ebms.com/
+    When The user logins to the EBMS Portal using below credentials
+      | username | miBenefitsTestAdmin |
+      | password | m!83N3fiT$t35t      |
     Then  The user validates below URL coming on the page
-    """
-    https://mibenefits-qua.ebms.com/administrator/dashboard
-    """
-    *     The user clicks on Membership tab
-    Then  The user validates below URL coming on the page
-    """
-    https://mibenefits-qua.ebms.com/administrator/membership
-    """
-
