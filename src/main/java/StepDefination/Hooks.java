@@ -14,7 +14,7 @@ public class Hooks {
     }
 
 
-    @After("@admin")
+    @After
     public void closeBrowser() {
         WebDriverRunner.closeWebDriver();
     }
