@@ -1,4 +1,12 @@
 StepDefination/steps_login.class
 StepDefination/Context.class
 StepDefination/Hooks.class
-StepDefination/steps_login1.class
+PageObjects/membershipPage.class
+PageObjects/LoginPage.class
+StepDefination/admin/AdminDashboardStepDef.class
+StepDefination/steps_membershipPage.class
+PageObjects/Login/Login.class
+PageObjects/dashboardPage.class
+PageObjects/BasePage.class
+StepDefination/step1_login.class
+CucumberRunner.class

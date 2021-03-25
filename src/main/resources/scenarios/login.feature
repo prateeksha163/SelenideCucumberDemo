@@ -3,7 +3,7 @@ Feature: Login EBMS
 
   This feature file contains steps to Login and navigate to EBMS tabs
 
-@P1
+
   Scenario: Login to EBMS Portal and navigate to membership Page
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -18,7 +18,7 @@ Feature: Login EBMS
     """
     https://mibenefits-qua.ebms.com/administrator/membership
     """
-  @P1
+
   Scenario: The user Login to EBMS Portal and navigates to claims Page
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -30,7 +30,7 @@ Feature: Login EBMS
     https://mibenefits-qua.ebms.com/administrator/claims
     """
 
-  @P1
+
   Scenario: The user Login to EBMS Portal and clicks on Enrolment
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -39,7 +39,7 @@ Feature: Login EBMS
     *     The user clicks on Begin New Enrollment tab
 
 
-  @P1
+
   Scenario Outline: The user clicks on multiple tabs coming in EBMS Portal
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -51,7 +51,7 @@ Feature: Login EBMS
       | Claims     |
       | Membership |
 
-  @P1
+
   Scenario: The user Login to EBMS Portal and compares data in dashboard page and Membership page
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -64,7 +64,7 @@ Feature: Login EBMS
     Then The user clicks on EBMS > A&K Railroad Materials, Inc. - 00716 tab
     Then The user compares the values in Dashboard Page and membership page
 
-  @P1
+
   Scenario: The user Login to EBMS Portal and validate the enrolment dropdown
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials
@@ -74,8 +74,3 @@ Feature: Login EBMS
     *     The following dropdown values should be visible in Enrollment
     |Ongoing Enrollments|
     |Open Enrollments   |
-
-
-
-
-

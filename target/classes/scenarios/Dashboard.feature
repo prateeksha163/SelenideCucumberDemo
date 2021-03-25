@@ -9,3 +9,11 @@ Feature: Login EBMS
       | username | miBenefitsTestAdmin |
       | password | m!83N3fiT$t35t      |
     Then  The user validates below URL coming on the page
+    """
+    https://mibenefits-qua.ebms.com/administrator/dashboard
+    """
+    Then Check quick links on dashboard page
+      | miInsights Executive Analytics |
+      | Manage Content                 |
+      | Begin New Enrollment           |
+      | Downloads                      |

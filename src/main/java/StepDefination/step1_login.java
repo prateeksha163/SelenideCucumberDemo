@@ -21,14 +21,12 @@ public class step1_login {
     }
 
     @Then("^The following dropdown values should be visible in Enrollment$")
-    public void dropdownValues_Enrollment(List<String> enrolmentValues)
-    {   System.out.println("expected="+enrolmentValues);
-        System.out.println("actual="+obj.getEnrolmentValues());
+    public void dropdownValues_Enrollment(List<String> enrolmentValues) {
         assertThat(enrolmentValues).isEqualTo(obj.getEnrolmentValues());
     }
 
     @Then("^The user is on EBMS Dashboard Page$")
-    public void the_user_is_on_dashboard_page()
-    {  new dashboardPage(context).get();
+    public void the_user_is_on_dashboard_page() {
+        new dashboardPage(context).get();
     }
 }
