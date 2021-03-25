@@ -7,13 +7,8 @@ import io.cucumber.java.Before;
 public class Hooks {
 
 
-
-
-
-
     @Before("@admin")
-    public void setup(){
-
+    public void setup() {
 
 
     }

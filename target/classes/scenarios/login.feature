@@ -3,7 +3,7 @@ Feature: Login EBMS
 
   This feature file contains steps to Login and navigate to EBMS tabs
 
-
+ @Test
   Scenario: Login to EBMS Portal and navigate to membership Page
     Given The user launches the URL https://mibenefits-qua.ebms.com/
     When The user logins to the EBMS Portal using below credentials

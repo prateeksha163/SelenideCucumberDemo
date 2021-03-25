@@ -1,33 +1,22 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-09T10:57:21.541Z",
-        "line": 55,
-        "name": "The user clicks on hierarchy dropdown",
+        "start_timestamp": "2021-03-25T08:48:20.164Z",
+        "line": 6,
+        "name": "Login to EBMS Portal and navigate to membership Page",
         "description": "",
-        "id": "login-ebms;the-user-clicks-on-hierarchy-dropdown",
-        "after": [
-          {
-            "result": {
-              "duration": 115804386,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
+        "id": "login-ebms;login-to-ebms-portal-and-navigate-to-membership-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7051817094,
+              "duration": 8365864159,
               "status": "passed"
             },
-            "line": 56,
+            "line": 7,
             "name": "The user launches the URL https://mibenefits-qua.ebms.com/",
             "match": {
               "arguments": [
@@ -42,10 +31,10 @@
           },
           {
             "result": {
-              "duration": 3629478759,
+              "duration": 4112381413,
               "status": "passed"
             },
-            "line": 57,
+            "line": 8,
             "name": "The user logins to the EBMS Portal using below credentials",
             "match": {
               "location": "steps_login.login_to_EBMS_Portal(String,String\u003e)"
@@ -68,100 +57,110 @@
           },
           {
             "result": {
-              "error_message": "Element not found {by text: EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716}\nExpected: visible or transparent: visible or have css value opacity\u003d0\nPage source: file:/Users/prateeksha.kharal/IdeaProjects/SelenideCucumberDemo/build/reports/tests/1615287456414.0.html\nTimeout: 4 s.\nCaused by: NoSuchWindowException: no such window: target window already closed\n\tat com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:77)\n\tat com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:108)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:133)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:22)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:15)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:154)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:128)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:80)\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\n\tat StepDefination.steps_login.user_clicks_on_MembershipPage(steps_login.java:50)\n\tat ✽.The user clicks on EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716 tab(classpath:scenarios/login.feature:60)\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d88.0.4324.192)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Prateeksha-Kharal-MBP-2.local\u0027, ip: \u0027fe80:0:0:0:188b:e52a:c37e:b818%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/1t/ylstj0kd351...}, goog:chromeOptions: {debuggerAddress: localhost:56715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9381e0c77f7a304449592e9d021ff850\n*** Element info: {Using\u003dxpath, value\u003d.//*/text()[normalize-space(translate(string(.), \u0027\t\n\r \u0027, \u0027    \u0027)) \u003d \"EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716\"]/parent::*}\n\tat jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:59)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34)\n\tat com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:93)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:133)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:22)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:15)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:154)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:128)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:80)\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\n\tat StepDefination.steps_login.user_clicks_on_MembershipPage(steps_login.java:50)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:580)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)\n\tat java.base/java.lang.Thread.run(Thread.java:832)\n",
-              "duration": 4210684459,
+              "duration": 40023821,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user validates below URL coming on the page",
+            "match": {
+              "location": "steps_login.user_validates_URL(String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "line": 12,
+              "value": "https://mibenefits-qua.ebms.com/administrator/dashboard"
+            }
+          },
+          {
+            "result": {
+              "error_message": "org.picocontainer.PicoCompositionException: Either the specified parameters do not match any of the following constructors: [private StepDefination.admin.AdminDashboardStepDef()]; OR the constructors were not accessible for \u0027StepDefination.admin.AdminDashboardStepDef\u0027\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:200)\n\tat org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)\n\tat org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:42)\n\tat cucumber.runtime.java.ObjectFactoryLoader$ObjectFactoryAdapter.getInstance(ObjectFactoryLoader.java:157)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:580)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)\n\tat java.base/java.lang.Thread.run(Thread.java:832)\n\tat ✽.Check quick links on dashboard page(classpath:scenarios/Dashboard.feature:15)\n",
+              "duration": 1669875,
               "status": "failed"
             },
-            "line": 60,
-            "name": "The user clicks on EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716 tab",
+            "line": 15,
+            "name": "Check quick links on dashboard page",
             "match": {
-              "arguments": [
-                {
-                  "val": "EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716",
-                  "offset": 19
-                }
-              ],
-              "location": "steps_login.user_clicks_on_MembershipPage(String)"
+              "location": "AdminDashboardStepDef.CheckQuickLinks(String\u003e)"
             },
-            "keyword": "* "
+            "rows": [
+              {
+                "cells": [
+                  "miInsights Executive Analytics"
+                ]
+              },
+              {
+                "cells": [
+                  "Manage Content"
+                ]
+              },
+              {
+                "cells": [
+                  "Begin New Enrollment"
+                ]
+              },
+              {
+                "cells": [
+                  "Downloads"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P1"
+          }
+        ]
+      }
+    ],
+    "name": "Login EBMS",
+    "description": "  This feature file contains steps to Login and navigate to EBMS tabs",
+    "id": "login-ebms",
+    "keyword": "Feature",
+    "uri": "classpath:scenarios/Dashboard.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-25T08:48:32.694Z",
+        "line": 5,
+        "name": "User navigates to EBMS membership Portal",
+        "description": "",
+        "id": "login-and-navigating-to-membership-page;user-navigates-to-ebms-membership-portal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expecting:\u003c\u0027https://mibenefits-qua.ebms.com/administrator/dashboard\u0027\u003e to contain:\u003c\u0027https://mibenefits-qua.ebms.com/administrator/membership\u0027\u003e (ignoring case)\n\tat PageObjects.membershipPage.isLoaded(membershipPage.java:41)\n\tat PageObjects.BasePage.get(BasePage.java:28)\n\tat StepDefination.steps_membershipPage.the_user_is_on_dashboard_page(steps_membershipPage.java:14)\n\tat ✽.The user is on EBMS MemberShip Page(classpath:scenarios/MembershipPage.feature:6)\n",
+              "duration": 16868763,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "The user is on EBMS MemberShip Page",
+            "match": {
+              "location": "steps_membershipPage.the_user_is_on_dashboard_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9694,
+              "duration": 8511,
               "status": "skipped"
             },
-            "line": 61,
-            "name": "The user gets the block of business in dashboard Page",
+            "line": 7,
+            "name": "The user validates below URL coming on the page",
             "match": {
-              "location": "steps_login.user_gets_block_of_business()"
+              "location": "steps_login.user_validates_URL(String)"
             },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 3875,
-              "status": "skipped"
-            },
-            "line": 62,
-            "name": "The user clicks on Cancel tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Cancel",
-                  "offset": 19
-                }
-              ],
-              "location": "steps_login.user_clicks_on_MembershipPage(String)"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 3455,
-              "status": "skipped"
-            },
-            "line": 63,
-            "name": "The user clicks on Membership tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Membership",
-                  "offset": 19
-                }
-              ],
-              "location": "steps_login.user_clicks_on_MembershipPage(String)"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 3543,
-              "status": "skipped"
-            },
-            "line": 64,
-            "name": "The user clicks on EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716 tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "EBMS \u003e A\u0026K Railroad Materials, Inc. - 00716",
-                  "offset": 19
-                }
-              ],
-              "location": "steps_login.user_clicks_on_MembershipPage(String)"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 3580,
-              "status": "skipped"
-            },
-            "line": 65,
-            "name": "The user verifies the values of block of business coming in dashboard Page and Membership Page",
-            "match": {
-              "location": "steps_login1.user_asserts_values()"
-            },
-            "keyword": "* "
+            "keyword": "Then ",
+            "doc_string": {
+              "line": 8,
+              "value": "https://mibenefits-qua.ebms.com/administrator/membership"
+            }
           }
         ],
         "tags": [
@@ -172,16 +171,16 @@
             "name": "@Test"
           },
           {
-            "name": "@P2"
+            "name": "@P1"
           }
         ]
       }
     ],
-    "name": "Login EBMS",
-    "description": "  This feature file contains steps to Login and navigate to EBMS tabs",
-    "id": "login-ebms",
+    "name": "Login and navigating to membership page",
+    "description": "",
+    "id": "login-and-navigating-to-membership-page",
     "keyword": "Feature",
-    "uri": "classpath:scenarios/login.feature",
+    "uri": "classpath:scenarios/MembershipPage.feature",
     "tags": [
       {
         "name": "@login",

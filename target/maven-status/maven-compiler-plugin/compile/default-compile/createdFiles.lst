@@ -9,4 +9,3 @@ PageObjects/Login/Login.class
 PageObjects/dashboardPage.class
 PageObjects/BasePage.class
 StepDefination/step1_login.class
-CucumberRunner.class
